@@ -9,7 +9,7 @@ app.use(express.json());
 let studentsData = ['Hao', 'Cathy', 'Arthur', 'Jun'];
 
 app.get('/students', (req, res) => {
-  res.status(200).json({studentsData});
+  res.status(200).json(studentsData);
 });
 
 app.post('/students', (req, res) => {
